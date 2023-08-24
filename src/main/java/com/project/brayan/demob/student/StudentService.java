@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.time.LocalDate;
 import java.util.List;
 
+@Service
 public class StudentService {
     @GetMapping
-    @Service
     public List<Student> getStudents() {
 
         Student student1 =new Student(
